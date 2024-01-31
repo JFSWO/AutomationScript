@@ -1,0 +1,18 @@
+abrir archivos
+leer archivos
+-Guardar direcciones
+abrir conexion SSH y SFTP
+Mandamos archivos
+ejecutamos archivos
+Guarda Log
+Guarda Resultado
+Envia a maquina principal
+Guarda log y resultado
+Cierra conexion
+Pasar al siguiente
+
+
+
+optional:
+Git
+Enviar correo
