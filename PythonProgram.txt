@@ -1,18 +1,43 @@
-abrir archivos
-leer archivos
--Guardar direcciones
-abrir conexion SSH y SFTP
-Mandamos archivos
-ejecutamos archivos
-Guarda Log
-Guarda Resultado
-Envia a maquina principal
-Guarda log y resultado
-Cierra conexion
-Pasar al siguiente
+Main: 
 
+Linux() “Logica para maquinas linux” 
 
+ 
 
-optional:
-Git
-Enviar correo
+      directions {}= Function LoadFilesLinux() 
+
+	 
+
+    	For x in directions: 
+
+	        	Function OpenConnectionLinux(x) 
+
+            Function SendFilesLinux() 
+            
+            Function ExecuteFilesLinux() 
+            
+            Function ExtractFilesLinux() 
+            
+            Function CloseConnection() 
+
+ 
+
+Windows() “Logica para maquinas window” 
+
+ 
+
+      directions {}= Function LoadFilesWindows () 
+
+	 
+
+	    For x in directions: 
+
+	      	Function OpenConnectionWindows(x) 
+
+          Function SendFilesWindows() 
+          
+          Function ExecuteFilesWindows() 
+          
+          Function ExtractFilesWindows() 
+          
+          Function CloseConnection() 
