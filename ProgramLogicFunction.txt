@@ -1,0 +1,105 @@
+Function LoadFilesLinux() “Cargar Archivos”: 
+
+      Abrir archivos Linux  
+      
+      Leer archivos Linux 
+      
+      		Nota: Separar ip y constrseña con %. Ej:[ 192.254.09.12%aq123141] 
+      
+      Guardar direcciones 
+      
+      		Guardar en una matriz de 2X2 mediante un loop. Posicion 0= ip, Posicion 1= 			constraseña 
+      
+      	Return Matriz 
+
+ 
+
+Function LoadFilesWindows() “Cargar Archivos”: 
+
+      Abrir archivos windows 
+      
+      Leer archivos windows 
+      
+      		Nota: Separar ip y constrseña con %. Ej:[ 192.254.09.12%aq123141] 
+      
+      Guardar direcciones 
+      
+      		Guardar en una matriz de 2X2 mediante un loop. Posicion 0= ip, Posicion 1= 			constraseña 
+      
+      	Return Matriz 
+
+ 
+
+Function OpenConnection()  “Conexion a equipos ”: 
+
+        abrir conexion SSH  
+        
+        Abrir conexion SFTP 
+
+ 
+
+Function SendFilesLinux() “Enviar archivos” : 
+
+        Mandamos archivos Mediante STFP 
+
+ 
+
+ 
+
+ 
+
+Function SendFilesWindows() “Enviar archivos” : 
+
+      Mandamos archivos Mediante STFP 
+
+ 
+
+Function ExecuteFilesLinux() “Ejecutar archivos” 
+      
+      ejecutamos archivos 
+      
+      Guarda Log con path especifico  
+      
+      Guarda Resultado con path especifico 
+
+ 
+
+Function ExecuteFilesWindows() “Ejecutar archivos” 
+
+      ejecutamos archivos 
+      
+      Guarda Log con path especifico  
+      
+      Guarda Resultado con path especifico 
+
+ 
+
+Function ExtractFilesLinux() “Guardar archivos en maquina principal”: 
+
+      Envia a maquina principal mediante SFTP 
+      
+      Guarda log y resultado 
+
+ 
+
+Function ExtractFilesWindows() “Guardar archivos en maquina principal”: 
+
+    Envia a maquina principal mediante SFTP 
+    
+    Guarda log y resultado 
+
+ 
+
+Function CloseConnection() “Cerrar conexion SSH y SFTP” 
+
+      Cierrar conexion 
+
+  
+
+Function RepoSend() “Enviar archivos” 
+
+        Git? 
+        
+        Enviar correo? 
+
+ 
