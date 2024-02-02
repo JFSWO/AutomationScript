@@ -1,1 +1,12 @@
+Requisitos:
 
+Puerto ## abierto para lo conexion
+Todos los equipos tengan SSH y SFTP Disponible
+Todos los equipos esten conectados a la red 
+Todos los equipos tengan Python instalados 
+Tenga listado todos los servidores por ip y su respectiva constraseña de SSH
+Separar listado de IPs por sistema operativo 
+Guardar listados en los archivos designados para cada sistema operativo 
+  Nota: cada fila debe tener una sola IP y constraseña sin espacios y separados por (%|)
+Designar una carpeta para guardar los resultados y los logs del programa
+  Notas: Definir la Ruta y tener un archivo para logs y otro para Resultados
