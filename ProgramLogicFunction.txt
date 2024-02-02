@@ -8,7 +8,7 @@ Function LoadFilesLinux() “Cargar Archivos”:
       
       Guardar direcciones 
       
-      		Guardar en una matriz de 2X2 mediante un loop. Posicion 0= ip, Posicion 1= 			constraseña 
+      	Guardar en una matriz de 2X2 mediante un loop. Posicion 0= ip, Posicion 1=constraseña 
       
       	Return Matriz 
 
@@ -24,82 +24,50 @@ Function LoadFilesWindows() “Cargar Archivos”:
       
       Guardar direcciones 
       
-      		Guardar en una matriz de 2X2 mediante un loop. Posicion 0= ip, Posicion 1= 			constraseña 
+      	Guardar en una matriz de 2X2 mediante un loop. Posicion 0= ip, Posicion 1=constraseña 
       
       	Return Matriz 
 
  
 
-Function OpenConnection()  “Conexion a equipos ”: 
+Function ConnectExecLinux(): 
 
         abrir conexion SSH  
         
         Abrir conexion SFTP 
 
+        Mandamos archivos Mediante STFP 
+
+        ejecutamos archivos 
+      
+        Guarda Log con path especifico  
+      
+        Guarda Resultado con path especifico 
+
+        Envia a maquina principal mediante SFTP el output
+      
+        Guarda log y resultado 
+
+        Cierrar conexion 
  
 
-Function SendFilesLinux() “Enviar archivos” : 
+Function ConnectExecWindows(): 
+
+        abrir conexion SSH  
+        
+        Abrir conexion SFTP 
 
         Mandamos archivos Mediante STFP 
 
- 
-
- 
-
- 
-
-Function SendFilesWindows() “Enviar archivos” : 
-
-      Mandamos archivos Mediante STFP 
-
- 
-
-Function ExecuteFilesLinux() “Ejecutar archivos” 
+        ejecutamos archivos 
       
-      ejecutamos archivos 
+        Guarda Log con path especifico  
       
-      Guarda Log con path especifico  
+        Guarda Resultado con path especifico 
+
+        Envia a maquina principal mediante SFTP el output
       
-      Guarda Resultado con path especifico 
+        Guarda log y resultado 
 
- 
-
-Function ExecuteFilesWindows() “Ejecutar archivos” 
-
-      ejecutamos archivos 
-      
-      Guarda Log con path especifico  
-      
-      Guarda Resultado con path especifico 
-
- 
-
-Function ExtractFilesLinux() “Guardar archivos en maquina principal”: 
-
-      Envia a maquina principal mediante SFTP 
-      
-      Guarda log y resultado 
-
- 
-
-Function ExtractFilesWindows() “Guardar archivos en maquina principal”: 
-
-    Envia a maquina principal mediante SFTP 
-    
-    Guarda log y resultado 
-
- 
-
-Function CloseConnection() “Cerrar conexion SSH y SFTP” 
-
-      Cierrar conexion 
-
-  
-
-Function RepoSend() “Enviar archivos” 
-
-        Git? 
-        
-        Enviar correo? 
-
+        Cierrar conexion 
  
