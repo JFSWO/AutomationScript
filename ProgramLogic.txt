@@ -10,15 +10,7 @@ Linux() “Logica para maquinas linux”
 
     	For x in directions: 
 
-	        	Function OpenConnectionLinux(x) 
-
-            Function SendFilesLinux() 
-            
-            Function ExecuteFilesLinux() 
-            
-            Function ExtractFilesLinux() 
-            
-            Function CloseConnection() 
+	        	Function ConnectExecLinux(x) 
 
  
 
@@ -32,12 +24,5 @@ Windows() “Logica para maquinas window”
 
 	    For x in directions: 
 
-	      	Function OpenConnectionWindows(x) 
+	      	Function ConnectExecWindows(x) 
 
-          Function SendFilesWindows() 
-          
-          Function ExecuteFilesWindows() 
-          
-          Function ExtractFilesWindows() 
-          
-          Function CloseConnection() 
